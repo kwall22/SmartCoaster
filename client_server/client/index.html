@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Coaster</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>Smart Coaster</h1>
+        </header>
+        <div id="body-div">
+            <div id="main-content">
+                <button id="connect-button">Connect</button>
+                <h2 id="temp-label">Current Temperature</h2>
+                <h3 id="current-temperature"></h3>
+                <div id="temperature-chart-div">
+                    <canvas id="temperature-chart"></canvas>
+                </div>
+                <h1>Stats</h1>
+                <div id="chart-container">
+                    <div id="caffeine-chart-div">
+                        <canvas id="caffeine-chart"></canvas>
+                    </div>
+                    <div id="cup-chart-div">
+                        <canvas id="cup-chart"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div id="side-bar">
+                <div id="set-time-interval-div">
+                    <h3>Set Temperature Interval</h3>
+                    <label for="interval-input">Update Interval (seconds):</label>
+                    <input type="number" id="interval-input" min="1" step="1">
+                    <button id="set-interval-button">Set Interval</button>
+                </div>
+                <form id="drinkForm">
+                    <label for="drinkType">Select your drink:</label>
+                    <select id="drinkType"></select>
+                
+                    <label for="drinkSize">Select your size:</label>
+                    <select id="drinkSize"></select>
+                
+                    <button type="button" id="setDrink">Set Drink</button>
+                </form>
+                <h3>Set temperature thresholds</h3>
+                <div id="thresholds-div">
+                    <label for="hottest-temp-input">Hottest drink temp</label>
+                    <input type="text" id="hottest-temp-input" placeholder="160">
+                    <label for="coldest-temp-input">Coldest drink temp</label>
+                    <input type="text" id="coldest-temp-input" placeholder="130">
+                    <button onclick="submitThresholds()" id="submit-thresholds-button">Submit</button>
+                </div>
+            </div>
+            <!-- <input type="color" id="picked-color" value="#ff0000">
+            <button id="submit-color-button">Submit Color</button>
+            <h3 id="picked-color-h3"></h3> -->
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>

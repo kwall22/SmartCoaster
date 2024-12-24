@@ -1,0 +1,185 @@
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f5ff;
+    color: #1f1f52;
+}
+
+header {
+    background-image: url('images/galaxy-background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 150px; 
+    color: #fff;
+    text-align: center;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    border: black;
+    border-radius: 10px;
+}
+
+header h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+#body-div {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+    margin: 3%;
+}
+
+#main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#connect-button, #temp-label, #current-temperature {
+    align-self: flex-start;
+    margin-left: 20px;
+}
+#temp-label{
+    margin-bottom: 0px;
+}
+
+#side-bar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: #ffffff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#side-bar h3 {
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+input, select, button {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    outline: none;
+}
+
+button {
+    background: #272767;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #534082;
+}
+
+#temperature-chart-div{
+    width: 700px;
+    height: 350px;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 8%;
+    /* margin-bottom: 20px; */
+}
+#temperature-chart{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}
+
+#chart-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#caffeine-chart-div, #cup-chart-div {
+    flex: 1 1 48%;
+    max-width: 47%;
+    height: auto;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#caffeine-chart, #cup-chart {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}
+
+#thresholds-div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#thresholds-div label {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+#set-time-interval-div {
+    margin-bottom: 20px;
+}
+
+#set-time-interval-div label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+#set-time-interval-div input {
+    width: 80%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#set-time-interval-div button {
+    background: #272767;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#set-time-interval-div button:hover {
+    background: #534082;
+}
+
